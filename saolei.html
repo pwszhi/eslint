@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫雷</title>
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <script src="./js/jquery-3.1.1.js"></script>
+    <script src="./js/saolei.js"></script>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        #main{
+            margin: 50px auto;           
+        }
+        .btn{
+            text-align: center;
+            margin-bottom: 10px;
+            user-select: none;
+        }
+        .btn button{          
+            margin: 0 auto;
+            background-color: #008c8c;
+            border: none;
+            color: white;
+            border-radius: 3px;
+            outline: none;
+            cursor: pointer;
+            padding: 5px 15px;
+        }
+        .btn .selected{
+            background-color: aqua;
+        }
+        .tip{
+            text-align: center;
+            margin-top: 15px;
+        }
+        table{
+            margin: 0 auto;
+            border-spacing: 1px;
+            background: #929196;
+        }
+        td{
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            background: #ccc;
+            border: 2px solid;
+            border-color: #fff #a1a1a1 #a1a1a1 #fff;
+            text-align: center;
+            line-height: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+            /* font-style: italic; */
+        }
+        .mine{
+            background: #d9d9d9 url(./imgs/lei/48e52a5c-eba7-4ea2-8ac1-daab7e6a00a8.png)no-repeat center;
+            background-size: unset;
+        }
+        .flag{
+            background: #ccc url(./imgs/lei/qi.png)no-repeat left top;
+            background-size: cover;
+        }
+        td.zero{
+            border-color: #d9d9d9;
+            background-color: #d9d9d9;
+        }
+        td.one{
+            border-color: #d9d9d9;
+            background-color: #d9d9d9;
+            color: #0332fe;
+        }
+        td.two{
+            border-color: #d9d9d9;
+            background-color: #d9d9d9;
+            color: #019f02;
+        }
+        td.three{
+            border-color: #d9d9d9;
+            background-color: #d9d9d9;
+            color: #ff2600;
+
+        }
+        td.four{
+            border-color: #d9d9d9;
+            background-color: #d9d9d9;
+            color: #93208f;
+        }
+        td.five{
+            border-color: #d9d9d9;
+            background-color: #d9d9d9;
+            color: #ff7f29;
+        }
+        td.six{
+            border-color: #d9d9d9;
+            background-color: #d9d9d9;
+            color: #ff3fff;
+        }
+        td.seven{
+            border-color: #d9d9d9;
+            background-color: #d9d9d9;
+            color:#3fffbf ;
+        }
+        td.eight{
+            border-color: #d9d9d9;
+            background-color: #d9d9d9;
+            color: #22ee0f;
+        }
+        .clicked{       
+            background: #d9d9d9 url(./imgs/lei/d.png)no-repeat center;
+            background-size: unset;    
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="btn">
+            <button class="selected">初级</button>
+            <button>中级</button>
+            <button>高级</button>
+            <button>重新开始</button>
+        </div>
+        <div class="box">
+
+        </div>
+       <div class="tip"><span >剩余雷数: <span class="num"></span></span></div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>小米商城</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/xiaomi.css">
+        <script src="./js/jquery-3.1.1.js"></script>
+        <script src="./js/xiaomi.js"></script>
+    </head>
+
+    <body>
+        <header class="top">
+            <div class="container clearfix">
+                <div class="nav fl">
+                    <a href="">小米商城</a><span>|</span>
+                    <a href="">MIUI</a><span>|</span>
+                    <a href="">IoT</a><span>|</span>
+                    <a href="">云服务</a><span>|</span>
+                    <a href="">天星数科</a><span>|</span>
+                    <a href="">有品</a><span>|</span>
+                    <a href="">小爱开放平台</a><span>|</span>
+                    <a href="">企业团购</a><span>|</span>
+                    <a href="">资质证照</a><span>|</span>
+                    <a href="">协议规则</a><span>|</span>
+                    <li class="qrcode"><a href="">下载App</a>
+                        <div class="code">
+                            <div class="dot"></div>
+                            <div class="pic">
+                                <a href="#">
+                                    <img src="./imgs/download.png" alt="">
+                                    <span>小米商城APP</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li><span>|</span>
+                    <a href="">智能生活</a>
+                </div>
+                <div class="login fr">
+                    <a href="">登录</a><span>|</span>
+                    <a href="">注册</a><span>|</span>
+                    <a class="msg" href="">消息通知</a>
+                    <a id="car" href="">购物车 <span class="num"> (0) </span> </a>
+                </div>
+            </div>
+
+        </header>
+        <div class="header">
+            <div class="logo fl" title="小米官网">
+                <div class="pic">
+                    <a class="mi" href="#">小米官网</a>
+                    <a class="iclogo" href="#">小米官网</a>
+                </div>
+
+            </div>
+            <form action="">
+                <div class="search-area fr">
+                    <input type="text">
+                    <a href="#">搜索</a>
+            </form>
+        </div>
+        <!-- <script>
+            $('.header .logo').hover(function () {
+                $(this).children('.pic').css('left', '55px');
+            }, function () {
+                $(this).children('.pic').css('left', '0px');
+            })
+        </script> -->
+        <div class="header-nav">
+            <ul class="clearfix">
+                <li><a href="#">全部商品分类</a></li>
+                <li class="items"><a href="#">小米手机</a></li>
+                <li class="items"><a href="#">Redmi 红米</a></li>
+                <li class="items"><a href="#">电视</a></li>
+                <li class="items"><a href="#">笔记本</a></li>
+                <li class="items"><a href="#">家电</a></li>
+                <li class="items"><a href="#">路由器</a></li>
+                <li class="items"><a href="#">智能硬件</a></li>
+                <li><a href="#">服务</a></li>
+                <li><a href="#">社区</a></li>
+            </ul>
+            
+        </div>
+        </div>
+        <div class="open-info"></div>
+        <script>
+            $('.items').hover(function () {
+                $('.open-info').css({
+                    'height': '228px',
+                    'border': '1px solid #e0e0e0'
+                })
+            }, function () {
+                $('.open-info').css({
+                    'height': '0px',
+                    'border': 'none'
+                })
+            })
+        </script>
+    </body>
+
+</html>
